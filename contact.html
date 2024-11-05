@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page de Contact</title>
+</head>
+<body>
+
+    <!-- En tête -->
+    <header class="header">
+        <!-- Titre -->
+         <h1>CONTACT</h1>
+    </header>
+
+    <!-- Barre latérale -->
+    <nav class="sidebar">
+        <ul class="nav-links">
+            <li><a href="index.html" title="acceuil">Accueil</a></li>
+            <li><a href="galerie.html" title="galerie">Galerie photos</a></li>
+            <li><a href="apropos.html" title="apropos">A propos</a></li>
+            <li><a href="contact.html" title="contact">Nous contacter</a></li>
+        </ul>
+        
+        <select class="nav-select">
+            <option value="acceuil">Acceuil</option>
+            <option value="Galerie">Galerie photos</option>
+            <option value="apropos">A propos</option>
+            <option value="contact">Nous contacter</option>
+        </select>
+    </nav>
+
+    <!-- Forme -->
+     <form action="exoblanc.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Informations personnel</legend>
+
+            <!-- Nom -->
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <!-- Prenom -->
+            <label for="prenom">Prenom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+            
+            <!-- Email -->
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email" required>
+            
+            <!-- Numero telephone -->
+            <label for="telephone">N°Tel :</label>
+            <input type="text" id="telephone" name="telephone" required>
+        </fieldset>  
+    </form>
+    <fieldset class="com">
+        <!-- Demande -->
+         <label for="comment" id="Commentaire">Votre Commentaire :</label>
+         <select name="choix" id="com">
+            <optgroup label="demande">
+                <option value="anime">Anime</option>
+                <option value="manga">Manga</option>
+                <option value="autres">Autres</option>
+            </optgroup>
+        </select>
+        
+        <!-- Commentaires -->
+         <textarea
+         rows="4"
+         cols="50" 
+         name="comment"
+         id="comment"
+         placeholder="Saisissez votre demande içi">
+        </textarea>
+        <!-- bouton -->
+         <button type="reset">Annuler</button>
+         <button type="submit">Envoyer</button>
+         <label for="newsletter"> Abonné vous !</label>
+         <input type="checkbox" name="abonnement" id="newsletter">
+        </fieldset>
+        <footer class="footer">
+            <p>&copy; 2024 AnimeM. Tous droits réservés.</p>
+            <address>Place du Royaume de Goa, East Blue</address>
+        </footer>
+    </body>
+    </html>
